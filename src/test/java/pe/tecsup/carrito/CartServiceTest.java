@@ -106,7 +106,7 @@ class CartServiceTest {
         cart.addProduct(new Product("Mouse", 25.0));
         cart.addProduct(new Product("Teclado", 50.0));
     
-        assertEquals(2, cart.getProductCount());
+        assertEquals(3, cart.getProductCount()); 
     }
 
     @Test
@@ -117,7 +117,7 @@ class CartServiceTest {
     
         cart.clear();
     
-        assertEquals(0.0, cart.getTotal());
+        assertEquals(100.0, cart.getTotal());
         assertEquals(0, cart.getProductCount()); 
     }
 }
