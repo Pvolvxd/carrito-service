@@ -1,0 +1,1 @@
+[![Carrito CI Pipeline](https://github.com/Pvolvxd/carrito-service/actions/workflows/ci.yml/badge.svg)](https://github.com/Pvolvxd/carrito-service/actions/workflows/ci.yml)
