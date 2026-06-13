@@ -11,7 +11,12 @@ public class CartService {
 
     private List<Product> products = new ArrayList<>();
 
-    public double getTotal() {
+        public double getTotal() {
+        return calcularSubtotal();
+    }
+
+    // Refactorizacion: metodo privado para calcular el subtotal del carrito
+    private double calcularSubtotal() {
         return products.stream()
                 .mapToDouble(Product::getPrice)
                 .sum();
